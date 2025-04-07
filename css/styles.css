@@ -1,0 +1,67 @@
+body{
+    font-family: "Poppins", sans-serif;
+    
+}
+
+ol,ul {
+    list-style: none;
+}
+
+.container {
+   width: 100%;
+}
+.container img{
+    border-radius: 8px;
+    
+}
+
+h1 {
+    color: rgb(153, 134, 223);
+    font-size: 45px;
+    font-family: "Boldonse", system-ui;
+}
+
+.container-drone img{
+    width: 100%;
+    /* height: 200px; */
+    border-radius: 8px;
+}
+.container-drone{
+    border: 2px solid #dc143c;
+    min-height: 200px;
+    width: 80%;
+    margin: 20px auto;
+    /* margim o primeiro cima e baixo segundo direita e esquerda */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container-drone p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.container-drone a {
+    /* link */
+    color: #dc143c;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    transition: .5s;
+}
+
+.container-drone a:hover{
+    color:rgb(153, 134, 223);
+}
+
+.container-blue{
+    background-color: rgb(212, 225, 241);
+}
+.container-purple{
+    background-color: rgb(224, 205, 240);
+}
