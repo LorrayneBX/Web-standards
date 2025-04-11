@@ -1,0 +1,34 @@
+/* variaveis - escopo global */
+:root{
+    --color-blue: #002;
+    --color-light: #f4f4f4;
+}
+
+/* reset css - asterisco representa tds as tags que estão na página - tds esarão essas regras*/
+*{
+ margin: 0;
+
+}
+
+.container{
+   width: 100%;
+   height: 100vh;
+   color: var(--color-light);
+   background-repeat:no-repeat; /*faz com q o fundo não repitad */
+    background-size: cover; /*faz com que a imagem ocupa td o container */
+    background-position: 50%;
+    background-attachment: fixed;
+}
+
+.bg-blue{
+    background-color: var(--color-blue);
+
+}
+
+.bg-image-1{
+    background-image: url(../images/pexels-thorsten-technoman-109353-338504.jpg);
+}
+
+.bg-image-2{
+    background-image: url(../images/pexels-pixabay-262047.jpg);
+}
