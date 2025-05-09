@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    min-height: 500px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    padding: 40px 0;
+    /*ajustamento do container não oq está dentro*/
+    /*se eu não tiver o flex, nadaduqye está abaixo do flex, funciona*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: center;
+    /*espaçamento entre os elementos*/
+    gap: 20px ;
+    /*fazer com que o meu box não diminua de tamalho caso eu coloque muitos elementos*/
+    flex-wrap: wrap;
+}
+.box {
+    min-height: 200px;
+    border: 1px solid #000;
+}
+.box-1{
+    width: 60%;
+    padding: 30px;
+    /*quando coloca display: flex;ele  vai direto para flex-direction:row; que quer dizer que ele fica em vertical o seu conteudo*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.box-1  img{
+    width: 80%;
+}
+.box-2{
+    width: 30%;
+}
