@@ -1,0 +1,125 @@
+:root {
+    --color-destaque: #86c4d1;
+    --light-bg: #0d0d0d;
+    --light-text: #faf4f4;
+    --dark-text: #0e0e0e;
+    
+    
+    --container-width: 90%;
+    --container-min-height: 100vh; 
+    --left-column-width: 65%;
+    --left-column-height:450px;
+    --right-column-width: 30%;
+    --right-column-height: 450px;
+    --image-height: 300px;
+    --image-width:100%;
+    --content-height: 150px; 
+
+
+    --padding-default: 20px;
+    --padding-button: 8px 15px;
+    --margin-button-descrition: 20px;
+}
+
+*{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: var(--container-width);
+    min-height: var(--container-min-height); 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+    padding: var(--padding-default) 0 ;
+    box-sizing: border-box;
+}
+
+.left-column {
+    width: var(--left-column-width);
+    height: var(--left-column-height);
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column img {
+    width: var(--image-width);
+    height: var(--image-height);
+    object-fit: cover;
+}
+
+.content {
+    height: var(--content-height); 
+    padding-top: var(--padding-default);
+    display: flex;
+    gap: 15px;
+}
+
+.title {
+    width: 45%;
+    font-weight: bold;
+    color: var(--dark-text);
+    line-height: 1.4;
+}
+
+.text-conteudo {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-conteudo p {
+    font-size: 17px;
+    color: var(--dark-text);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.text-conteudo a {
+    background-color: var(--color-destaque);
+    color: var(--dark-text);
+    text-decoration: none;
+    padding: var(--padding-button);
+    font-weight: 600;
+    width: fit-content;
+}
+
+.right-column {
+    width: var(--right-column-width);
+    height: var(--right-column-height);
+    background-color: var(--light-bg);
+    padding: var(--padding-default) ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.name-tech {
+    color: var(--color-destaque);
+    font-size: 1.5rem;
+    margin-bottom: var(--margin-button-descrition);
+}
+
+.box-descricao {
+    margin-bottom: var(--margin-button-descrition);
+}
+
+.title-descricao {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--light-text);
+    
+}
+
+.text-descricao {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    line-height: 1.4;
+    margin: 0;
+}
