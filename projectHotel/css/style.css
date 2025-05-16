@@ -14,6 +14,10 @@
 
 html{
     scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
 }
 ul,ol{
     list-style: none;
@@ -32,7 +36,9 @@ a{
     background-size: cover; /*faz com que a imagem ocupa td o container */
     background-position: 50%;
     background-attachment: fixed;
-    padding: 0 30px;
+    padding: 0 1.875rem;
+    /*Para o font size 2em, no header title, poder pehar, poderia colocar no header page tbm*/
+    /*font-size: 15px;*/
     
 }
 
@@ -48,29 +54,62 @@ a{
 }
 
 .bg-image-2{
+    background-image: var(--bg-gradient);
     background-image: url(../images/pexels-pixabay-262047.jpg);
 }
 
 .header-page{
     width: 100%;
-    height: 100px;
+    height: 6.25rem;
     display: flex;
-    flex-direction: row;
     align-items: center;
     /* para deixar o h2 de um lado e a li pro outro */
     justify-content: space-between; 
 }
 .header-page-menu ul{
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
+.header-title{
+    font-size: clamp(26px,4vw,5rem);
+    /*rever vmin, vmax, vh, vw, clamp(), em, rem*/
+
+    & .logo-span{
+        background-color: var(--color-blue);
+        border-radius: 5px;
+    }
+}
+
 .hero{
-    background-color: #000;
+    
     height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    /*nESTING css - forma para montar o código css mai sclaro e direto ao invesde usar .hero p*/
+    & h2{
+        font-size: clamp(22px,3vw,3.2rem);
+        text-transform: uppercase;
+    }
+    & p{
+        font-weight: 600;
+        text-align: center;
+        width: 60%;
+        /*para controlar a quantiddae por linha, para que nunca fique uma unica palavra sozinha numa linha*/
+        text-wrap: balance;
+    }
+}
 
+.btn{
+    background-color: var(--color-blue);
+    padding: .8rem 3rem;
+    border-radius: 8rem;
+    border: 1px solid var(--color-light);
+    transition: .5s;
+
+    &:hover{
+        background-color: transparent;
+    }
 }
