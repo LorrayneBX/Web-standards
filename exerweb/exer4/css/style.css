@@ -1,0 +1,79 @@
+h1{
+    font-family: "Winky Sans", sans-serif;
+    color: rgb(35, 35, 236);
+    margin: 25px 90px;
+}
+.container{
+   margin: 0 90px;
+   padding: 30px;
+   box-sizing: border-box;
+}
+.container img {
+    display: block;
+    margin: auto;
+
+}
+.para p{
+    padding: 40px;
+    width: 80%;
+    min-height: 200px;
+    margin: 40px 60px;
+    box-sizing: border-box;
+    text-align: left;
+}
+p{
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 520;
+}
+.main {
+    border: 2px solid #172c73;
+    padding: 40px;
+    margin: 0 60px;
+    box-sizing: border-box;
+    min-height: 200px;
+    text-align: center;
+}
+.main h2{
+    font-family: "Montserrat", sans-serif;
+    color: #5590e8;
+}
+.main h3{
+    font-family: "Montserrat", sans-serif;
+    color: blue;
+    text-align: center;
+}
+.container h2{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: #4386ea;
+    font-weight: 600;
+}
+.container h3{
+    font-family: "Montserrat", sans-serif;
+    color: #4181e0;
+    text-align: left;
+    font-weight: 600;
+}
+
+.container ul{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.container a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(188, 124, 29);
+    text-align: left;
+}
+ .container a:hover{
+    color: #4181e0;
+ }
+.receita img{
+    width: 300px;
+    display: inline-block;
+    height: 200px;
+    margin: 40px 0;
+}

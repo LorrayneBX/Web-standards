@@ -1,0 +1,68 @@
+h1{
+    font-family: "Winky Sans", sans-serif;
+    color: rosybrown;
+    margin-left: 150px;
+}
+   
+p{
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: left;
+    padding: 0 30px;
+}
+.main {
+    border: 2px solid #7d3535;
+    width: 60%;
+    padding: 20px;
+    margin: 20px 120px;
+    box-sizing: border-box;
+    min-height: 200px;
+    
+}
+.main img{
+    width: 100%;
+    border-radius: 8px;
+
+}
+.main p{
+    text-align: center;
+    text-align: left;
+}
+h2,h3{
+    text-align: center;
+ font-family: "Montserrat", sans-serif;
+    font-weight: 700px;
+    color: rgb(152, 11, 11);
+}
+.livros{
+    border: 2px solid #7d3535;
+    width: 60%;
+    padding: 50px;
+    margin: 20px 120px;
+    box-sizing: border-box;
+    min-height: 200px;
+}
+.livros img{
+    width: 100%;
+    border-radius: 8px;
+}
+.livros a{
+    color: rgb(127, 242, 255);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: .5s;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.livros a:hover{
+    color: blueviolet;
+}
+ul,ol{
+    font-size: 17px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0 30px;
+    list-style: none;
+}
