@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+     padding: 2rem 1rem;
+  height: 200px; /* Tamanho fixo para todos os blocos */
+  color: white;
+  text-align: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Filtro escuro sobre a imagem */
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* escurece a imagem */
+  z-index: 0;
+}
+
+/* Conteúdo acima do overlay */
+.box h2,
+.box p {
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+  margin: 0.2rem 0;
+  color: #fff;
+}
+
+.box h2 {
+  font-size: 2.5rem;
+}
+
+.box p {
+  font-size: 1.3rem;
+}
+
+/* Classes de imagem */
+.bg1 {
+  background-image: url('../images/bg1.jpg');
+}
+.bg2 {
+  background-image: url('../images/bg2.jpg');
+}
+.bg3 {
+  background-image: url('../images/bg3.jpg');
+}
+.bg4 {
+  background-image: url('../images/bg4.jpg');
+}
+
+
